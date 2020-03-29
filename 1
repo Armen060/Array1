@@ -1,0 +1,19 @@
+
+let newArr; 
+function  sumArray(){
+     newArr=[];
+   while(true){
+     let number=+prompt("Enter number");
+     if ( !isFinite(number)|| number=== "" || number === null){
+       break;
+     }
+   newArr.push(number);  
+   } 
+  return newArr;
+}
+console.log(sumArray());
+let sum=0;
+for(let i=0;i<newArr.length;i++){
+  sum=sum+newArr[i];
+}
+console.log("andamneri gumar@   "    +   sum);
